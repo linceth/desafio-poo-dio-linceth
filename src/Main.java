@@ -1,5 +1,7 @@
 import br.com.dio.desafio.dominio.Bootcamp;
 import br.com.dio.desafio.dominio.Curso;
+import br.com.dio.desafio.dominio.DesafioCodigo;
+import br.com.dio.desafio.dominio.DesafioProjetos;
 import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
 
@@ -22,6 +24,16 @@ public class Main {
         mentoria.setDescricao("descrição mentoria java");
         mentoria.setData(LocalDate.now());
 
+        DesafioCodigo desafio1 = new DesafioCodigo();
+        desafio1.setTitulo("Explorando monitoramento educativo");
+        desafio1.setDescricao("Aprendendo recursos vinculados ao monitoramento escolar");
+        desafio1.setCargaHoraria(10);
+
+        DesafioProjetos projeto1 = new DesafioProjetos();
+        projeto1.setTitulo("Elaborando um sistema de monitoramento educacional");
+        projeto1.setDescricao("Construindo um sistema por meio da implementação de técnicas, organização, utilização de Paradigmas como a POO");
+        projeto1.setCargaHoraria(20);
+
         /*System.out.println(curso1);
         System.out.println(curso2);
         System.out.println(mentoria);*/
@@ -32,6 +44,8 @@ public class Main {
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
+        bootcamp.getConteudos().add(desafio1);
+        bootcamp.getConteudos().add(projeto1);
 
         Dev devCamila = new Dev();
         devCamila.setNome("Camila");
